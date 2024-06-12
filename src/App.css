@@ -1,0 +1,174 @@
+.home-container {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App {
+  background-color: rgb(200, 200, 200);
+  height: 100vh;
+  text-align: center;
+}
+
+/* .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+
+.app {
+  /* height: 100vh; */
+  background-color: #1b1d20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.logo {
+  /* margin-bottom: 1.25rem; */
+  width: 150px;
+  height: 50px;
+}
+
+.company-name {
+  width: 100px;
+  height: 100px;
+}
+
+.tagline {
+  /* margin-top: 1.25rem; */
+  
+  font-size: small;
+  color: #BCA996;
+}
+
+.footer {
+  /* bottom: 0; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80vw;
+  color: #BCA996;
+  height: 10vh;
+  font-size: smaller;
+  margin:0;
+  align-items: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .footer{
+    margin-top: 50px;
+    flex-direction: column-reverse;
+  }
+}
+
+
+.pdfbutton {
+  margin-top: 50px;
+  z-index: 1000;
+  display: inline-block;
+  cursor: pointer;
+  /* outline: none; */
+  /* border-width: 0px; */
+  border: 1px solid #33383d;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: inherit;
+  font-weight: 500;
+  max-width: 100%;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.1s ease-out 0s, box-shadow 0.15s cubic-bezier(0.47, 0.03, 0.49, 1.38) 0s;
+  /* background: #fff; */
+  height: 32px;
+  line-height: 32px;
+  padding: 0px 12px;
+  vertical-align: middle;
+  width: auto;
+  font-size: 14px;
+  color: #33383d;
+
+}
+
+.pdfbutton:hover {
+  background-color: #33383d;
+  text-decoration: inherit;
+  /* transition-duration: 0s, 0.15s; */
+  color: rgb(200,200,200);
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translate(-50%, -100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 40px;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  animation: slideDown 0.5s ease-out;
+  animation-fill-mode: forwards;
+  opacity: 0; /* Start hidden */
+}
+
+.popup.show {
+  opacity: 1;
+  animation: slideDown 0.5s ease-out, fadeOut 1.5s 2s forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}

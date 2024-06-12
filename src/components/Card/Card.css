@@ -1,0 +1,41 @@
+.cardstyle {
+    display: block;
+    max-width: 300px; /* Adjusted from max-w-xs */
+    padding: 0.5rem; /* Adjusted from p-2 */
+    background-color: none !important;
+    border-radius: 0.5rem; /* Adjusted from rounded-lg */
+    text-decoration: none;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.cardstyle:hover {
+box-shadow: 0 5px 5px rgba(184, 167, 149, 1);
+}
+
+.card-image {
+width: 100%;
+margin-bottom: 1rem; /* Adjusted from mb-4 */
+}
+
+.card-image img {
+width: 100%;
+height: auto;
+border-radius: 0.5rem; /* Adjusted from rounded-lg */
+}
+
+.card-content {
+text-align: left; /* Adjusted from text-left */
+}
+
+.card-title {
+margin-bottom: 0.5rem; /* Adjusted from mb-2 */
+font-size: 1.5rem; /* Adjusted from text-2xl */
+font-weight: bold; /* Adjusted from font-bold */
+color: #E0E0E0;
+line-height: 1.2;
+}
+
+.card-subtitle {
+font-size: 1rem;
+color: #b6b6b6;
+}
