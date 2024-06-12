@@ -32,7 +32,7 @@ function App() {
       </div>
     </div>
     <footer className='footer'>
-    <p>Copyright © 2024 Emoting Void</p>
+    <p>Copyright © 2024 Emoting Void LLP</p>
     <p>design@emotingvoid.com</p>
   </footer>
   </div>
