@@ -21,7 +21,7 @@ function FlipPage() {
     }, []);
 
     const handler = () => {
-        const url = 'https://drive.google.com/file/d/13Z2lvJpCMgQytAbz_rANdW3sL9kfGNxz/view'
+        const url = 'https://drive.google.com/file/d/1zVDdazZOHGOPmWDpKen_0gm4E7pxydEu/view'
         var win = window.open(url, '_blank');
         console.log('here')
         win.focus();
