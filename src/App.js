@@ -11,7 +11,7 @@ import whattsapp from './assets/whattsapp.svg'
 function App() {
   const links = [
     { imageSrc: Portfolio, title: 'Portfolio', subtitle: 'See our work in action', link: '/flipbook' },
-    { imageSrc: instagram, title: 'Instagram', subtitle: '@emoting_void', link: 'https://instagram.com/emoting_void' },
+    { imageSrc: instagram, title: 'Instagram', subtitle: '@emoting_void', link: 'https://instagram.com/emotingvoid' },
     { imageSrc: facebook, title: 'Facebook', subtitle: 'Emoting Void', link: 'https://www.facebook.com/profile.php?id=61551241550407' },
     { imageSrc: linkedIn, title: 'LinkedIn', subtitle: 'Know more about our work', link: 'https://linkedin.com/company/emoting-void' },
     { imageSrc: whattsapp, title: 'Whatsapp', subtitle: 'Talk to us directly on a click', link: 'https://wa.me/918800204121?text=Hi,%20I%20would%20like%20to%20know%20more.' },
